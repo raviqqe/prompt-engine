@@ -3,9 +3,15 @@
 exports[`buildPrompt > builds a prompt 1`] = `
 "foo
 
-
-
 \\"\\"\\"USER
 bar
+\\"\\"\\"
+
+\\"\\"\\"BOT
+baz
+\\"\\"\\"
+
+\\"\\"\\"USER
+qux
 \\"\\"\\""
 `;
