@@ -14,14 +14,15 @@ export const buildPrompt = (
     description,
     examples
       .flatMap(({ input, output }) => [
-        wrapChat(input, true),
-        wrapChat(output, false),
+        buildUtterance(input, true),
+        buildUtterance(output, false),
       ])
       .join(separator),
-    wrapChat(input, true),
+    buildUtterance(input, true),
+    buildRole(false),
   ].join(separator);
 
-const wrapChat = (data: string, user: boolean) =>
+const buildUtterance = (data: string, user: boolean) =>
   `
 ${buildRole(user)}
 ${data}

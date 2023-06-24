@@ -5,15 +5,14 @@ exports[`buildPrompt > builds a prompt 1`] = `
 
 \\"\\"\\"USER
 bar
-\\"\\"\\"
 
 \\"\\"\\"BOT
 baz
-\\"\\"\\"
 
 \\"\\"\\"USER
 qux
-\\"\\"\\""
+
+\\"\\"\\"BOT"
 `;
 
 exports[`buildPrompt > builds a prompt with two examples 1`] = `
@@ -21,21 +20,18 @@ exports[`buildPrompt > builds a prompt with two examples 1`] = `
 
 \\"\\"\\"USER
 bar
-\\"\\"\\"
 
 \\"\\"\\"BOT
 baz
-\\"\\"\\"
 
 \\"\\"\\"USER
 answer
-\\"\\"\\"
 
 \\"\\"\\"BOT
 42
-\\"\\"\\"
 
 \\"\\"\\"USER
 qux
-\\"\\"\\""
+
+\\"\\"\\"BOT"
 `;
