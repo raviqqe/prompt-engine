@@ -3,8 +3,6 @@ export interface Example {
   output: string;
 }
 
-const startPattern = /"""[a-zA-Z0-9]*\s/;
-const endPattern = /"""\s*$/;
 const separator = "\n\n";
 
 export const buildPrompt = (
@@ -25,27 +23,9 @@ export const buildPrompt = (
 
 const wrapChat = (data: string, user: boolean) =>
   `
-"""${(user ? "user" : "bot").toUpperCase()}
+${buildRole(user)}
 ${data}
-"""
 `.trim();
 
-export const parseOutputStream = async function* (
-  deltas: AsyncIterable<string>
-): AsyncIterable<string> {
-  let current = "";
-
-  for await (const delta of deltas) {
-    current += delta;
-
-    if (!current.includes('"')) {
-      yield current;
-      current = "";
-      continue;
-    }
-
-    current = current.replace(startPattern, "");
-  }
-
-  return current.replace(endPattern, "");
-};
+const buildRole = (user: boolean): string =>
+  `"""${(user ? "user" : "bot").toUpperCase()}`;
