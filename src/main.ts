@@ -11,8 +11,8 @@ export const buildPrompt = (
   description: string,
   examples: Example[],
   input: string
-): string => {
-  return [
+): string =>
+  [
     description,
     examples
       .flatMap(({ input, output }) => [
@@ -22,7 +22,6 @@ export const buildPrompt = (
       .join(separator),
     wrapChat(input, true),
   ].join(separator);
-};
 
 const wrapChat = (data: string, user: boolean) =>
   `
