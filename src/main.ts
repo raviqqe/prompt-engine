@@ -20,7 +20,7 @@ export const buildPrompt = (
       .join(separator),
     buildUtterance(input, true),
     buildRole(false),
-  ].join(separator);
+  ].join(separator) + "\n";
 
 const buildUtterance = (data: string, user: boolean) =>
   `

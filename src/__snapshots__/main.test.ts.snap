@@ -12,7 +12,8 @@ baz
 \\"\\"\\"USER
 qux
 
-\\"\\"\\"BOT"
+\\"\\"\\"BOT
+"
 `;
 
 exports[`buildPrompt > builds a prompt with two examples 1`] = `
@@ -33,5 +34,6 @@ answer
 \\"\\"\\"USER
 qux
 
-\\"\\"\\"BOT"
+\\"\\"\\"BOT
+"
 `;
