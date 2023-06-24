@@ -1,6 +1,6 @@
+import { toArray } from "@raviqqe/hidash/promise";
 import { describe, expect, it } from "vitest";
 import { buildPrompt, parseOutputStream } from "./main.js";
-import { toArray } from "@raviqqe/hidash/promise";
 
 describe(buildPrompt.name, () => {
   it("builds a prompt", () => {
