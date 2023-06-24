@@ -15,3 +15,27 @@ baz
 qux
 \\"\\"\\""
 `;
+
+exports[`buildPrompt > builds a prompt with two examples 1`] = `
+"foo
+
+\\"\\"\\"USER
+bar
+\\"\\"\\"
+
+\\"\\"\\"BOT
+baz
+\\"\\"\\"
+
+\\"\\"\\"USER
+answer
+\\"\\"\\"
+
+\\"\\"\\"BOT
+42
+\\"\\"\\"
+
+\\"\\"\\"USER
+qux
+\\"\\"\\""
+`;
