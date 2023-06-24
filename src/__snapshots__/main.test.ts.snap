@@ -1,0 +1,41 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`buildPrompt > builds a prompt 1`] = `
+"foo
+
+\\"\\"\\"USER
+bar
+\\"\\"\\"
+
+\\"\\"\\"BOT
+baz
+\\"\\"\\"
+
+\\"\\"\\"USER
+qux
+\\"\\"\\""
+`;
+
+exports[`buildPrompt > builds a prompt with two examples 1`] = `
+"foo
+
+\\"\\"\\"USER
+bar
+\\"\\"\\"
+
+\\"\\"\\"BOT
+baz
+\\"\\"\\"
+
+\\"\\"\\"USER
+answer
+\\"\\"\\"
+
+\\"\\"\\"BOT
+42
+\\"\\"\\"
+
+\\"\\"\\"USER
+qux
+\\"\\"\\""
+`;
