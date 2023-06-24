@@ -3,7 +3,7 @@
 [![GitHub Action](https://img.shields.io/github/actions/workflow/status/raviqqe/prompt-engine/test.yaml?branch=main&style=flat-square)](https://github.com/raviqqe/prompt-engine/actions)
 [![Codecov](https://img.shields.io/codecov/c/github/raviqqe/prompt-engine.svg?style=flat-square)](https://codecov.io/gh/raviqqe/prompt-engine)
 [![npm](https://img.shields.io/npm/v/@raviqqe/prompt-engine?style=flat-square)](https://www.npmjs.com/package/@raviqqe/prompt-engine)
-[![License](https://img.shields.io/github/license/raviqqe/prompt-engine.svg?style=flat-square)](LICENSE)
+[![License](https://img.shields.io/github/license/raviqqe/prompt-engine.svg?style=flat-square)](UNLICENSE)
 
 A few-shot prompt engine.
 
