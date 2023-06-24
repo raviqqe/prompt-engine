@@ -5,8 +5,9 @@ export interface Example {
 
 const startPattern = /"""[a-zA-Z0-9]*\s/;
 const endPattern = /"""\s*$/;
+const separator = "\n\n";
 
-export const build = (
+export const buildPrompt = (
   description: string,
   examples: Example[],
   input: string
@@ -14,12 +15,13 @@ export const build = (
   return [
     description,
     examples
-      .map(({ input, output }) =>
-        [wrapChat(input, true), wrapChat(output, false)].join("\n\n")
-      )
-      .join("\n\n"),
+      .flatMap(({ input, output }) => [
+        wrapChat(input, true),
+        wrapChat(output, false),
+      ])
+      .join(separator),
     wrapChat(input, true),
-  ].join("\n\n");
+  ].join(separator);
 };
 
 const wrapChat = (data: string, user: boolean) =>
