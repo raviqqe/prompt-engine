@@ -4,7 +4,7 @@ import { buildPrompt } from "./main.js";
 describe(buildPrompt.name, () => {
   it("builds a prompt", () => {
     expect(
-      buildPrompt("foo", [{ input: "bar", output: "baz" }], "qux")
+      buildPrompt("foo", [{ input: "bar", output: "baz" }], "qux"),
     ).toMatchSnapshot();
   });
 
@@ -16,8 +16,8 @@ describe(buildPrompt.name, () => {
           { input: "bar", output: "baz" },
           { input: "answer", output: "42" },
         ],
-        "qux"
-      )
+        "qux",
+      ),
     ).toMatchSnapshot();
   });
 });
