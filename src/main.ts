@@ -8,7 +8,7 @@ const separator = "\n\n";
 export const buildPrompt = (
   description: string,
   examples: [Example, ...Example[]],
-  input: string
+  input: string,
 ): string =>
   [
     description,
