@@ -3,37 +3,37 @@
 exports[`buildPrompt > builds a prompt 1`] = `
 "foo
 
-\\"\\"\\"USER
+"""USER
 bar
 
-\\"\\"\\"BOT
+"""BOT
 baz
 
-\\"\\"\\"USER
+"""USER
 qux
 
-\\"\\"\\"BOT
+"""BOT
 "
 `;
 
 exports[`buildPrompt > builds a prompt with two examples 1`] = `
 "foo
 
-\\"\\"\\"USER
+"""USER
 bar
 
-\\"\\"\\"BOT
+"""BOT
 baz
 
-\\"\\"\\"USER
+"""USER
 answer
 
-\\"\\"\\"BOT
+"""BOT
 42
 
-\\"\\"\\"USER
+"""USER
 qux
 
-\\"\\"\\"BOT
+"""BOT
 "
 `;
