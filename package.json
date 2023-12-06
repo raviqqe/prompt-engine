@@ -21,7 +21,7 @@
     "test": "vitest --coverage"
   },
   "devDependencies": {
-    "@raviqqe/eslint-config": "^1.0.22",
+    "@raviqqe/eslint-config": "^2.0.2",
     "@raviqqe/tsconfig": "^1.0.1",
     "@vitest/coverage-v8": "^1.0.1",
     "eslint": "^8.34.0",
