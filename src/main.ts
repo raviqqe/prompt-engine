@@ -10,7 +10,7 @@ export const buildPrompt = (
   examples: [Example, ...Example[]],
   input: string,
 ): string =>
-  [
+  `${[
     description,
     examples
       .flatMap(({ input, output }) => [
@@ -20,7 +20,7 @@ export const buildPrompt = (
       .join(separator),
     buildUtterance(input, true),
     buildRole(false),
-  ].join(separator) + "\n";
+  ].join(separator)}\n`;
 
 const buildUtterance = (data: string, user: boolean) =>
   `
