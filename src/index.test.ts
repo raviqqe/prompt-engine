@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { buildPrompt } from "./main.js";
+import { buildPrompt } from "./index.js";
 
 describe(buildPrompt.name, () => {
   it("builds a prompt", () => {
