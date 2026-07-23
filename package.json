@@ -2,20 +2,17 @@
   "name": "@raviqqe/prompt-engine",
   "version": "0.2.5",
   "description": "Yet another prompt engine",
-  "repository": "https://github.com/raviqqe/prompt-engine",
   "license": "MIT",
-  "publishConfig": {
-    "provenance": true
-  },
-  "engines": {
-    "node": ">=24.6.0"
-  },
+  "repository": "https://github.com/raviqqe/prompt-engine",
   "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
     }
+  },
+  "publishConfig": {
+    "provenance": true
   },
   "scripts": {
     "build": "rslib build",
@@ -31,5 +28,8 @@
     "typescript": "^7.0.2",
     "vitest": "^4.0.1"
   },
-  "packageManager": "pnpm@10.15.0+sha512.486ebc259d3e999a4e8691ce03b5cac4a71cbeca39372a9b762cb500cfdf0873e2cb16abe3d951b1ee2cf012503f027b98b6584e4df22524e0c7450d9ec7aa7b"
+  "engines": {
+    "node": ">=26.5.0"
+  },
+  "packageManager": "pnpm@11.16.0+sha512.b767e9a98fc87aec0f42daefcd0e84941c2cdb45d73c4e1e68860fb2bdfdbe032ab592105479e5e05c237f740c8a5ffdbbb52385797ddc2296745a1bbb883e8d"
 }
